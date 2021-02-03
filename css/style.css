@@ -8,7 +8,7 @@ html {
 header{
     background-color: #4285F4;
     padding: 10px;
-    border: solid 0.5px white;
+    border: solid 0.5px #F3E0DC;
     border-top: 1px;
     display: flex;
     flex-wrap: wrap;
@@ -19,20 +19,12 @@ header{
 h1 {
     font-size: 1.5rem;
     color: #F3E0DC;
-    font-weight: 100px;
+    font-weight: bold;
 }
 
 body {
     margin: 0px;
     background-color: #BC4639;
-}
-
-.btn-menu-icon {
-    display: block;
-	background-color: transparent;
-	border: none;
-    cursor: pointer;
-    position: absolute;
 }
 
 .menu-icon {
@@ -44,6 +36,7 @@ body {
 .show {
     display: block;
 }
+
 
 #wrapper {
     padding: 0 50px 30px;
@@ -60,10 +53,7 @@ body {
 }
 
 #nav-ul{
-	display: block;
-	margin: 0;
-	padding: 0;
-	list-style: none;	
+    display: none;	
 }
 
 #logo {
@@ -71,13 +61,40 @@ body {
     height: auto;   
 }
 
-@media (min-width:700px) {
+@media (min-width:600px) {
     header {
         padding: 30px;
     }
 
-    .btn-menu {
+    .menu-icon {
         display: none;
+    }
+
+    #nav-ul{
+        display: block;
+        margin: 0;
+        padding: 18px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #5C2018;
+        border: solid 0.5px white;
+    }
+
+    #nav-ul a {
+        color: #F3E0DC;
+        padding: 18px;
+        text-decoration:none;
+    }
+
+    #nav-ul a:hover {
+        background-color:#4285F4;
+    }
+
+    #nav-ul .active {
+        background-color:#D4A59A;
+        color: #5C2018;
+        font-weight: bold;
     }
 
 }
