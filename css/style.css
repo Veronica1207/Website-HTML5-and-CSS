@@ -35,6 +35,11 @@ body {
     position: absolute;
 }
 
+.menu-icon {
+    width: 45px;
+    height: 30px;
+    cursor: pointer; 
+}
 
 .show {
     display: block;

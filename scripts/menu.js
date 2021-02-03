@@ -19,7 +19,7 @@ More on javascript in a future lesson
 	// d = document
 	
 	const $nav = d.querySelector('nav');
-	const $btn = d.querySelector('.btn-menu');
+	const $btn = d.querySelector('.menu-icon');
 	
 	$btn.addEventListener('click', function(){
 		
