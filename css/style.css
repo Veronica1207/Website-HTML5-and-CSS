@@ -5,6 +5,10 @@ html {
     color: #5C2018;
   }
 
+.show {
+    display: block;
+}
+
 header{
     background-color: #4285F4;
     padding: 10px;
@@ -27,16 +31,66 @@ body {
     background-color: #BC4639;
 }
 
+nav {
+	display:none;
+	clear: both;
+	background-color: #5C2018;
+    border: solid 0.5px white;
+}
+
 .menu-icon {
     width: 45px;
     height: 30px;
     cursor: pointer; 
 }
 
-.show {
+#nav-ul{
     display: block;
+    margin: 0;
+    list-style: none;
+    background-color: #5C2018;
 }
 
+#nav-ul a{
+    display: block;
+    color: #F3E0DC;
+    text-decoration:none;
+    padding: 5px;
+    text-align: center;
+}
+
+#nav-ul a:hover {
+    background-color:#4285F4;
+}
+
+
+
+
+/*
+.nav-link {
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	color: #F3E0DC;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color:#4285F4;
+}
+
+.nav-link:focus,
+.nav-link:active {
+    background-color:#D4A59A;
+    color: #5C2018;
+    font-weight: bold;
+}
+*/
+
+#logo {
+    width: 40px;
+    height: auto;   
+}
 
 #wrapper {
     padding: 0 50px 30px;
@@ -52,18 +106,16 @@ body {
     border-width:0px 2px;
 }
 
-#nav-ul{
-    display: none;	
-}
 
-#logo {
-    width: 40px;
-    height: auto;   
-}
+
 
 @media (min-width:600px) {
     header {
         padding: 30px;
+    }
+    
+    nav {
+        display: block;
     }
 
     .menu-icon {
@@ -73,7 +125,7 @@ body {
     #nav-ul{
         display: block;
         margin: 0;
-        padding: 18px;
+        padding: 15px;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -83,7 +135,7 @@ body {
 
     #nav-ul a {
         color: #F3E0DC;
-        padding: 18px;
+        padding: 15px 25px 15px 25px;
         text-decoration:none;
     }
 
