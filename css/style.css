@@ -4,6 +4,9 @@ html {
     font-size:1em;
     color: #5C2018;
   }
+*{
+    box-sizing: inherit;
+ }
 
 .show {
     display: block;
@@ -42,6 +45,7 @@ h3, h4, h5, h6 {
     color: #BC4639;
 }
 
+
 body {
     margin: 0px;
     background-color: #BC4639;
@@ -68,13 +72,97 @@ ol {
 }
 
 table{
-    border-style:solid;
-    border-width:1px;
+    border-style:double;
+    border-width: 1px;
+    border-color: #5C2018;
     width:50%;
+    background-color:#D4A59A;
 }
 td{
     border-style:solid;
     border-width:1px;
+    background-color:#F3E0DC;
+}
+
+th {
+    border-style:solid;
+    border-width:1px;
+    border-color:#5C2018;
+    color: #F3E0DC;
+    background-color: #BC4639;  
+}
+
+footer {
+    background-color: #4285F4;
+    margin:0px;
+}
+
+.footer-ul {
+    list-style: none;
+    display:flex;
+    justify-content:space-evenly;
+    border-top: solid 0.5px #F3E0DC;
+    border-bottom: solid 0.5px #F3E0DC;
+}
+
+.footer-li {  
+    display:block;
+    display:flex;
+    margin: 0px;
+    padding: 10px;
+    color: #5C2018;
+    text-decoration: none;
+}
+
+.footer-h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    color: #F3E0DC;
+    align-self:center;
+}
+
+.social_a{
+	text-decoration: none;
+    display:block;
+    display:flex;
+	background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: left;
+    background-position-y: center;
+    padding: 15px 15px 15px 30px;   
+    margin:0px;
+    color: #42F4B0;
+}
+
+.footer-li:visited,
+.social_a:visited {
+    color:#5C2018;
+}
+
+.footer-li:hover,
+.social_a:hover {
+    background-color: #D4A59A;
+    color: #BC4639;
+}
+
+.twitter{ 
+    background-image: url("../images/twitter.svg");
+}
+.facebook{
+    background-image: url("../images/facebook.svg");	
+}
+.instagram{
+	background-image: url("../images/instagram.svg");	
+}
+
+.end-of-paragraph {
+    margin: 0px;
+}
+
+.example_content_image {
+    float: left;
+    padding: 0px 15px 0px 0px;
 }
 
 .menu-icon {
@@ -98,7 +186,7 @@ td{
 
 #logo-text {
     letter-spacing: 5px;
-    font-family: Monaco;
+    font-family: 'Monaco';
 }
 
 #nav-ul{
@@ -130,30 +218,6 @@ td{
     color: #5C2018;
     font-weight: bold;
 }
-
-
-
-
-/*
-.nav-link {
-	display: block;
-	line-height: 40px;
-	text-align: center;
-	color: #F3E0DC;
-	text-decoration: none;
-}
-
-.nav-link:hover {
-    background-color:#4285F4;
-}
-
-.nav-link:focus,
-.nav-link:active {
-    background-color:#D4A59A;
-    color: #5C2018;
-    font-weight: bold;
-}
-*/
 
 #logo {
     width: 40px;
