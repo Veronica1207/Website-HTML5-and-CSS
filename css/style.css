@@ -18,12 +18,28 @@ header{
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     font-size: 1.5rem;
     color: #F3E0DC;
     font-weight: bold;
+}
+
+h2 {
+    padding: 0px;
+    margin: 30px 0px 0px 0px;
+    letter-spacing: 2px;
+    color: #BC4639;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1.3em;
+    padding: 0px;
+    margin: 25px 0px 30px 0px;
+    letter-spacing: 2px;
+    color: #BC4639;
 }
 
 body {
@@ -33,9 +49,32 @@ body {
 
 nav {
 	display:none;
-	clear: both;
+    clear: both;
+    width: 100%;
 	background-color: #5C2018;
     border: solid 0.5px white;
+}
+
+ul {
+    list-style-type:square;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+ol {
+    list-style-type:upper-roman;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+table{
+    border-style:solid;
+    border-width:1px;
+    width:50%;
+}
+td{
+    border-style:solid;
+    border-width:1px;
 }
 
 .menu-icon {
@@ -44,9 +83,28 @@ nav {
     cursor: pointer; 
 }
 
+.top-article {
+    display: block;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.articles {
+    display: block;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+#logo-text {
+    letter-spacing: 5px;
+    font-family: Monaco;
+}
+
 #nav-ul{
     display: block;
-    margin: 0;
+    padding: 0px;
+    margin: 1px;
     list-style: none;
     background-color: #5C2018;
 }
@@ -55,12 +113,22 @@ nav {
     display: block;
     color: #F3E0DC;
     text-decoration:none;
-    padding: 5px;
+    padding: 10px 20px 10px 20px;
     text-align: center;
 }
 
 #nav-ul a:hover {
     background-color:#4285F4;
+}
+
+#nav-ul a:focus {
+    background-color:#4285F4;
+}
+
+#nav-ul .active {
+    background-color:#D4A59A;
+    color: #5C2018;
+    font-weight: bold;
 }
 
 
@@ -125,7 +193,6 @@ nav {
     #nav-ul{
         display: block;
         margin: 0;
-        padding: 15px;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
