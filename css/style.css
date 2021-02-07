@@ -206,7 +206,7 @@ footer{
 .top-article{
     background-color: #e2c4bd;
     padding: 25px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #top-article-h2 {
@@ -254,16 +254,13 @@ footer{
 }
 
 #wrapper {
-    padding: 0 50px 30px;
+    padding: 0px 25px 25px;
     background-color: #F3E0DC;
     max-width:1024px;
     min-height:100vh;
     margin:auto;
-
-    /*  make flexbox container*/
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     border:solid 2px white;
     border-width:0px 2px;
 }
@@ -281,7 +278,7 @@ footer{
 
 #main-page03 {
     background-color: #e2c4bd;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
     padding: 25px;
 }
@@ -317,12 +314,6 @@ footer{
         justify-content: flex-end;
         padding: 30px;
     }
-
-    #logo-text {
-        display:block;
-        padding: 0px 0px 0px 12px;
-        margin: 37px 0px 0px 0px;
-    }
     
     nav {
         display: block;
@@ -330,32 +321,6 @@ footer{
 
     .menu-icon {
         display: none;
-    }
-
-    #nav-ul{
-        display: block;
-        margin: 0px;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #5C2018;
-        border: solid 0.5px white;
-    }
-
-    #nav-ul a {
-        color: #F3E0DC;
-        padding: 15px 25px 15px 25px;
-        text-decoration:none;
-    }
-
-    #nav-ul a:hover {
-        background-color:#4285F4;
-    }
-
-    #nav-ul .active {
-        background-color:#D4A59A;
-        color: #5C2018;
-        font-weight: bold;
     }
 
     footer {
@@ -390,6 +355,50 @@ footer{
     .social_a{
         padding: 10px 10px 10px 30px;   
         margin:0px;
+    }
+
+    .top-article{
+        margin-top: 50px;
+    }
+
+    #logo-text {
+        display:block;
+        padding: 0px 0px 0px 12px;
+        margin: 37px 0px 0px 0px;
+    }
+
+    #nav-ul{
+        display: block;
+        margin: 0px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #5C2018;
+        border: solid 0.5px white;
+    }
+
+    #nav-ul a {
+        color: #F3E0DC;
+        padding: 15px 25px 15px 25px;
+        text-decoration:none;
+    }
+
+    #nav-ul a:hover {
+        background-color:#4285F4;
+    }
+
+    #nav-ul .active {
+        background-color:#D4A59A;
+        color: #5C2018;
+        font-weight: bold;
+    }
+
+    #wrapper {
+        padding: 0 50px 30px;
+    }
+
+    #main-page03 {
+        margin-top: 50px;
     }
 
 }
