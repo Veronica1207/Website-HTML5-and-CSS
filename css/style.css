@@ -1,4 +1,4 @@
-html {
+html{
     box-sizing:border-box;
     font-family:Garamond;
     font-size:1em;
@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
  }
 
-.show {
+.show{
     display: block;
 }
 
@@ -24,20 +24,20 @@ header{
     align-items: center;
 }
 
-h1 {
+h1{
     font-size: 1.5rem;
     color: #F3E0DC;
     font-weight: bold;
 }
 
-h2 {
+h2{
     padding: 0px;
     margin: 30px 0px 0px 0px;
     letter-spacing: 2px;
     color: #BC4639;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h5, h6{
     font-size: 1.3em;
     padding: 0px;
     margin: 25px 0px 30px 0px;
@@ -45,12 +45,12 @@ h3, h4, h5, h6 {
     color: #BC4639;
 }
 
-body {
+body{
     margin: 0px;
     background-color: #BC4639;
 }
 
-nav {
+nav{
 	display:none;
     clear: both;
     width: 100%;
@@ -58,13 +58,13 @@ nav {
     border: solid 0.5px white;
 }
 
-ul {
+ul{
     list-style-type:square;
     margin: 0px;
     padding: 0px 0px 0px 20px;
 }
 
-ol {
+ol{
     list-style-type:upper-roman;
     margin: 0px;
     padding: 0px 20px 0px 30px;
@@ -77,13 +77,14 @@ table{
     width:50%;
     background-color:#D4A59A;
 }
+
 td{
     border-style:solid;
     border-width:1px;
     background-color:#F3E0DC;
 }
 
-th {
+th{
     border-style:solid;
     border-width:1px;
     border-color:#5C2018;
@@ -91,41 +92,41 @@ th {
     background-color: #BC4639;  
 }
 
-strong {
+strong{
     color: #4285F4;
 }
 
-em {
+em{
     color: #BC4639;
     font-weight: bolder;
 }
 
-a:link {
+a:link{
     color: #5C2018;
     font-weight: bolder;
 }
 
-a:visited {
+a:visited{
     color: #4a5c79; 
 }
 
 a:focus,
-a:hover {
+a:hover{
     color: #bd2fe9;
 	text-decoration:none;
 }
 
-a:active {
+a:active{
     color: #BC4639;
 }
 
-footer {
+footer{
     background-color: #4285F4;
     margin:0px;
     border-top: solid 1px white;
 }
 
-.footer-ul {
+.footer-ul{
     list-style: none;
     display:flex;
     justify-content:space-evenly;
@@ -142,7 +143,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-h2 {
+.footer-h2{
     text-align: center;
     margin: 0px;
     padding: 15px;
@@ -158,7 +159,7 @@ footer {
     background-size: 20px;
     background-position-x: left;
     background-position-y: center;
-    padding: 15px 15px 15px 30px;   
+    padding: 10px 10px 10px 25px;   
     margin:0px;
 }
 
@@ -187,11 +188,11 @@ footer {
 	background-image: url("../images/instagram.svg");	
 }
 
-.end-of-paragraph {
+.end-of-paragraph{
     margin: 0px;
 }
 
-.example_content_image {
+.example_content_image{
     float: left;
     padding: 0px 15px 0px 0px;
 }
@@ -200,6 +201,16 @@ footer {
     width: 45px;
     height: 30px;
     cursor: pointer; 
+}
+
+.top-article{
+    background-color: #e2c4bd;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+#top-article-h2 {
+    margin: 0px;
 }
 
 #logo-text {
@@ -274,7 +285,6 @@ footer {
     margin-bottom: 20px;
     padding: 25px;
 }
-
 
 
 @media (min-width:820px) {
@@ -389,17 +399,18 @@ footer {
 		content:" URL: (" attr(href) ") ";		
     }
 
+    html, body {
+        height: auto;
+    }
+
     html, th, strong, em{
         color: black;
         background-color: white;
     }
+
     h1, h2, h3, h4, h5, h6 {
         color: black;
         page-break-after: avoid;
-    }
-
-    h5 {
-        page-break-before: always;
     }
 
     nav, footer{
